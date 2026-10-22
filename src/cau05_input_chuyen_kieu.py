@@ -1,0 +1,16 @@
+ma_may = input("nhap ma may: ")
+cong_suat = input("nhap cong suat(W): ")
+so_phut = input("nhap so phut su dung: ")
+don_gia = input("nhap don gia dien dong/kWh): ")
+print("Kieu du lieu ma may:", type(ma_may))
+print("Kieu du lieu cong suat:", type(cong_suat))
+print("Kieu du lieu so phut:", type(so_phut))
+print("Kieu du lieu don gia:", type(don_gia))
+cong_suat = float(cong_suat)
+so_phut = int(so_phut)
+don_gia = float(don_gia)
+dien_nang_kwh = cong_suat * so_phut / 60 / 1000
+chi_phi = dien_nang_kwh * don_gia
+print("Ma may:", ma_may)
+print("Dien nang tieu thu:", dien_nang_kwh, "kWh")
+print("Chi phi:", chi_phi, "dong")
